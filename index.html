@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>D-STYLE OFC</title>
+    <link rel="icon" href="./img/D-STYLE 2 logo.jpg"/>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./video/video fundo site.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./img/D-STYLE 2 logo.jpg" alt="logo-D-Style">
+            </a>
+
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#Sobre Nós">Sobre</a>
+                <a href="#catalogo">Catalago</a>
+
+            </nav>
+            <div class="icons">
+                <button id="cartIcon" class="cart-icon">
+                    <img width="40" height="40" src="img/icons8-fast-cart-64.png" alt="fast-cart" />
+                    <span id="cartItemCount">0</span> <!-- Contador de itens -->
+                </button>
+                
+            </div>
+           <!-- Carrinho Popup (Aba Lateral) -->
+<div id="cartPopup" class="cart-popup">
+    <h2>Seu Carrinho</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalPrice">Total: R$ 0,00</p>
+    
+    <!-- Formulário de Checkout -->
+    <div id="checkoutForm">
+        <h3>Finalizar Pedido</h3>
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Digite seu nome" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email" required />
+
+        <label for="address">Endereço</label>
+        <input type="text" id="address" placeholder="Digite seu endereço" required />
+
+        <button id="finalizeOrderButton">Finalizar Pedido</button>
+    </div>
+
+    <button id="closeCartButton">Fechar Carrinho</button>
+</div>
+
+        </section>
+    </header>
+
+
+    <div>
+        <section id="Home" class="caixa-principal">
+            <div>
+                <h3>D-Style: A MODA QUE TE INSPIRA!</h3>
+
+                <p>A D-Style é uma loja de roupas e calçados que se destaca pela qualidade, conforto e design de seus
+                    produtos. A loja oferece uma variedade de opções para todos os estilos, A equipe da D-Style está
+                    sempre atenta às últimas tendências da moda para oferecer aos seus clientes o que há de melhor.</p>
+
+
+                <a href="#catalogo" class="botao_link">Não perca mais tempo procurando! Venha para a D-Style e encontre
+                    o look perfeito que te fará brilhar!</a>
+            </div>
+        </section>
+
+        <section id="Sobre Nós" class="caixa-sobre">
+            <h2> <span>SOBRE</span> NÓS</h2>
+            <div class="sobre-container">
+                <div class="sobre-imagem">
+                    <img src="./img/ROUPAS/D-style roupa 2.jpg">
+                </div>
+
+                <div class="sobre-texto">
+                    <h3>D-Style: A moda que te define, com um toque que faz a diferença!</h3>
+                    <p>Buscamos tendências e marcas que se destacam pela qualidade, design e originalidade, para que
+                        você tenha acesso a peças únicas e exclusivas.</p>
+                    <P>Na D-Style, a moda é mais do que roupa, é sobre expressão! Queremos que você se sinta confiante e
+                        autêntico, por isso, oferecemos looks que valorizam o seu estilo pessoal e te ajudam a contar a
+                        sua história.</P>
+                    <a class="botao_link">Saiba Mais</a>
+
+                </div>
+        </section>
+
+        <section id="catalogo" class="catalogo">
+            <h2>Catálogo de Roupas</h2>
+
+            <div class="produtos-container">
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 1.jpeg" alt="Camiseta Básica">
+                    <h3>Camiseta Básica</h3>
+                    <p>Preço: R$ 49,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 1.jpeg" alt="Camiseta Básica">
+                    <h3>Camiseta Básica</h3>
+                    <p>Preço: R$ 49,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 2.jpeg" alt="Calça Jeans">
+                    <h3>Oversizes no Malhão</h3>
+                    <p>Preço: R$ 49,90</p>                    
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 3.jpeg" alt="Jaqueta de Couro">
+                    <h3>Kit camisa e short.</h3>
+                    <p>Preço: R$ 199,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 3.jpeg" alt="Jaqueta de Couro">
+                    <h3>Kit camisa e short.</h3>
+                    <p>Preço: R$ 199,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 4.jpeg" alt="Vestido Floral">
+                    <h3>Regata.</h3>
+                    <p>Preço: R$ 199,90</p>                   
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 5.jpeg" alt="Blusa de Tricô">
+                    <h3>Kit Camisa e Bermuda</h3>
+                    <p>Preço: R$ 79,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/CATALAGO/IMAG 5.jpeg" alt="Blusa de Tricô">
+                    <h3>Kit Camisa e Bermuda</h3>
+                    <p>Preço: R$ 79,90</p>
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <section>
+
+                    <div class="insta">
+                        <a href="Https://www.instagram.com/d_styleofc" target="_blank">
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png"
+                                alt="instagram-new" />
+                    </div>
+                </section>
+
+                <section>
+                    <div class="whats">
+                        <a href="https://wa.me/5593984093828" target="_blank">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png"
+                                alt="whatsapp--v1" />
+
+                    </div>
+                </section>
+                <section>                    
+                    <a href="https://api.whatsapp.com/send?phone=5593984093828&text=Ol%C3%A1%2C%20gostaria%20de%20finalizar%20meu%20pedido%2E%20Aqui%20est%C3%A3o%20os%20detalhes%20do%20pedido%2E">
+                        <div id="orderConfirmation" style="display: none;">
+                            <h2>Pedido Finalizado com Sucesso!</h2>
+                            <p>Seu pedido foi registrado. Agora, entre em contato com a gente via WhatsApp para concluir a compra!</p>
+                            <button id="goToWhatsapp" onclick="goToWhatsApp()">Ir para o WhatsApp</button>
+                        </div>
+                    </a>
+                    <script>
+                    function goToWhatsApp() {
+                    window.location.href =
+                    "https://api.whatsapp.com/send?phone=5593984093828&text=Ol%C3%A1%2C%20gostaria%20de%20finalizar%20meu%20pedido%2E%20Aqui%20est%C3%A3o%20os%20detalhes%20do%20pedido%2E";
+                    }
+                    </script>
+                
+                </section>
+                <!-- Aba do Carrinho -->
+                <div id="cart" class="cart-popup">
+                    <h2>Seu Carrinho</h2>
+                    <ul id="cartItems"></ul>
+                    <p id="totalPrice">Total: R$ 0,00</p>
+                    <button id="checkoutButton">Finalizar Compra</button>
+                    <button id="closeCartButton">Fechar</button>
+                </div>
+                
+                <script src="script.js"></script>
+
+                <script src="./scripts.js"></script>
+        </section>
+</body>
+
+</html>

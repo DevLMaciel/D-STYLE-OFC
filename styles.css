@@ -66,12 +66,13 @@ section {
 
 }
 
-.header section nav a {
+.Cabeçalho nav a {
     margin: 3rem;
     font-size: 2rem;
     color: #fff;
     transition: 0.2s linear;
 }
+
 /* Estilo para o ícone do carrinho */
 .cart-icon {
     position: fixed;
@@ -112,7 +113,8 @@ section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     padding: 20px;
     overflow-y: auto;
     z-index: 1000;
@@ -193,7 +195,7 @@ section {
 
 .caixa-principal div h3 {
     color: #fff;
-    font-size: 6rem;
+    font-size: 7rem;
     text-transform: uppercase;
 }
 
@@ -214,10 +216,6 @@ section {
     padding: 1rem 2rem;
     border: none;
     transition: 0.3s linear;
-}
-
-.botao_link:focus {
-    outline: 2px solid var(--main-color);
 }
 
 .caixa-principal div a:hover {
@@ -252,9 +250,9 @@ section {
     width: 100%;
 }
 
-.caixa-sobre .sobre-container .sobre-texto{
+.caixa-sobre .sobre-container .sobre-texto {
     flex: 1 1 45rem;
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .caixa-sobre .sobre-container .sobre-texto h3 {
@@ -323,7 +321,7 @@ section {
     background-color: #e9ca1c;
     color: #fff;
     border: none;
-    
+
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -369,38 +367,38 @@ section {
 
 .insta img {
     position: fixed;
-        bottom: 90px;
-        right: 20px;
-        z-index: 9999;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #cd25d3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        animation: breathe 2s ease-in-out infinite;
-    }
+    bottom: 90px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cd25d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: breathe 2s ease-in-out infinite;
+}
 
-    .whats img {
-        position: fixed;
-        bottom: 40px;
-        right: 20px;
-        z-index: 9999;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #09972c;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        animation: breathe 2s ease-in-out infinite; 
-        
-    }
-    
-    /* Animação respirar para o ícone do WhatsApp */
+.whats img {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #09972c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: breathe 2s ease-in-out infinite;
+
+}
+
+/* Animação respirar para o ícone do WhatsApp */
 .whats-icon img {
     animation: breathe 2s ease-in-out infinite;
 }
@@ -413,12 +411,59 @@ section {
 /* Animação para o efeito de respiração (aplica aumento e diminuição de tamanho) */
 @keyframes breathe {
     0% {
-        transform: scale(1); /* Tamanho original */
+        transform: scale(1);
+        /* Tamanho original */
     }
+
     50% {
-        transform: scale(1.1); /* Aumenta o tamanho em 10% */
+        transform: scale(1.1);
+        /* Aumenta o tamanho em 10% */
     }
+
     100% {
-        transform: scale(1); /* Retorna ao tamanho original */
+        transform: scale(1);
+        /* Retorna ao tamanho original */
     }
+}
+
+/*REAJUSTE PARA TAMNHO DE TELAS */
+@media screen and (max-width: 525px) {
+
+    /*CLASS GERAIS */
+    .caixa-principal {
+        flex-direction: column;
+    }
+
+    /*CABEÇALHO */
+    .Cabeçalho nav a {
+        margin: 3px;;
+        font-size: 17px;
+            
+    }
+    .icons {
+        font-size: 10px;
+        padding: 0px, 0,2%;
+    }
+}
+
+/* TOPO DO SITE  */
+.header section {
+    gap: 40px;
+}
+
+.caixa-principal div h3 {
+    font-size: 37px;
+    padding: 60px 13%;
+}
+
+.caixa-principal div p {
+    font-size: 19px;
+    padding: 0, 20px;
+
+}
+
+.caixa-sobre .sobre-container .sobre-Imagem img {
+    width: 100%;
+    padding: 0px 0, 1%;
+    margin: 0 auto;
 }
